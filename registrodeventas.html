@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ventas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Registro de Ventas<br>Laura Chavarria<br>Simon Serna</h1>
+        <h2>Selecciona un producto</h2>
+        <form id="ventaForm">
+            <label for="producto">Producto:</label>
+            <select id="producto">
+                <option value="0" disabled selected>Selecciona un producto</option>
+                <!-- Productos del inventario -->
+            </select>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" min="1" value="1" required>
+
+            <button type="submit">Agregar al carrito</button>
+        </form>
+
+        <h2>Carrito de compras</h2>
+        <ul id="carrito">
+            <!-- Productos agregados aparecerán aquí -->
+        </ul>
+
+        <div id="totales">
+            <p>Total sin IVA: <span id="totalSinIva">$0.00</span></p>
+            <p>IVA (19%): <span id="iva">$0.00</span></p>
+            <p>Total con IVA: <span id="totalConIva">$0.00</span></p>
+        </div>
+    </div>
+
+    <script src="registro.js"></script>
+</body>
+</html>

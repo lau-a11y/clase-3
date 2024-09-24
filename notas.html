@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo del Promedio de Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculo de Promedio de Notas<br>Laura Chavarria<br>Simon Serna</h1>
+
+        <form id="gradeForm">
+            <div class="period">
+                <h2>Período 1 (30%)</h2>
+                <label for="period1">Ingrese las 5 notas:</label>
+                <input type="text" id="period1" placeholder="Ejemplo: 4.0,3.5,2.8,4.2,3.9" required>
+            </div>
+
+            <div class="period">
+                <h2>Período 2 (30%)</h2>
+                <label for="period2">Ingrese las 7 notas:</label>
+                <input type="text" id="period2" placeholder="Ejemplo: 3.5,4.0,3.7,4.5,3.9,3.2,4.1" required>
+            </div>
+
+            <div class="period">
+                <h2>Período 3 (40%)</h2>
+                <label for="period3">Ingrese las 4 notas:</label>
+                <input type="text" id="period3" placeholder="Ejemplo: 4.2,4.5,4.8,5.0" required>
+            </div>
+
+            <button type="submit">Calcular Promedio</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
